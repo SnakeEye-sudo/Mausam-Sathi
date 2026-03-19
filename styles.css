@@ -471,3 +471,31 @@ h1, h2, h3 {
   .toolbar,
   .button-row { flex-wrap: wrap; }
 }
+
+.weather-shell {
+  background:
+    radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+}
+
+.premium-weather {
+  gap: 16px;
+}
+
+.premium-summary {
+  align-items: start;
+}
+
+.weather-main-stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.weather-detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 980px) {
+  .weather-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
