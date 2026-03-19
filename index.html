@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f1e33">
+  <meta name="description" content="Weather planner with city search, current conditions, five-day outlook, and browser geolocation powered by Open-Meteo.">
+  <title>Mausam Sathi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="night">
+  <div class="ambient-layer">
+    <div class="ambient-orb orb-a"></div>
+    <div class="ambient-orb orb-b"></div>
+    <div class="ambient-grid"></div>
+    <div class="ambient-noise"></div>
+  </div>
+
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand-wrap">
+          <img src="logo.svg" alt="Mausam Sathi logo" class="brand-logo">
+          <div>
+            <p class="hero-tag">Forecast glass board</p>
+            <h1>Mausam Sathi</h1>
+          </div>
+        </div>
+        <a class="family-chip" href="https://snakeeye-sudo.github.io/Aapka-Sathi/">Aapka-Sathi family</a>
+      </div>
+
+      <div class="hero-grid">
+        <section class="hero-copy">
+          <p class="eyebrow">Sky-aware planning app</p>
+          <h2 class="hero-headline">City search se current weather aur five-day outlook instantly pao.</h2>
+          <p class="hero-text">Open-Meteo geocoding aur forecast ke saath clean weather board, taaki travel, classes, ya day planning quick ho jaye.</p>
+          <div class="hero-badges">
+            <span class="hero-badge">City search</span><span class="hero-badge">Current weather</span><span class="hero-badge">5 day forecast</span><span class="hero-badge">Use my location</span>
+          </div>
+        </section>
+
+        <section class="hero-side">
+          <div class="metric-card">
+            <p class="eyebrow">Forecast reach</p>
+            <h3>Today + 5 days</h3>
+            <strong>Live API</strong>
+            <p class="muted">Search any city you need.</p>
+          </div>
+          <div class="metric-card secondary">
+            <p class="eyebrow">Info</p>
+            <h3>Data source</h3>
+            <p class="muted">Open-Meteo forecast and geocoding.</p>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main id="appRoot" class="app-root"></main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="logo.svg" alt="Mausam Sathi logo">
+        <div>
+          <strong>Mausam Sathi</strong>
+          <p>Daily planning ko weather-aware banane ke liye.</p>
+        </div>
+      </div>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
